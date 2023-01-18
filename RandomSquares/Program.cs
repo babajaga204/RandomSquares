@@ -1,3 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+using RandomSquares;
+
+var cell = new VirtualScreenCell();
+cell.AddLowerLeftCorner();
+cell.AddVertical();
+
+Console.WriteLine(cell.GetCharacter());
